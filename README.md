@@ -1,7 +1,7 @@
 # CarEngine
 
-CarEngine is a simple game engine, which uses the physics library Project Chrono (https://projectchrono.org/) and is designed to provide particularly realistic car physics.
-The engine is written in c++ and uses OpenGL for rendering.
+CarEngine is a simple game engine, which uses a modified version of the physics library Project Chrono (https://projectchrono.org/) and is designed to provide particularly realistic car physics.
+The engine is written in C++ and uses OpenGL for rendering.
 
 ### Trailer:
 https://www.youtube.com/watch?v=2FUGkOtglFY
@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=2FUGkOtglFY
 ### Features:
 
 - Realistic car physics
-- Rendering with directional lighting, shadows, texture tiling
+- 3D Rendering with directional lighting, shadows, texture tiling
 - Collisions and collision triggers (can be setup in Blender)
 - UI system
 - Actor component system

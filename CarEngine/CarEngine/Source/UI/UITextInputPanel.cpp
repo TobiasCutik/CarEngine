@@ -111,6 +111,22 @@ namespace CE
             uiButtonShared->setActive(bActive);
     }
 
+    void UITextInputPanel::setTextInput(const std::string& Text)
+    {
+        if (Text.length() > characterLimit)
+        {
+            onCharacterLimitReached.broadcast(characterLimit);
+            return;
+        }
+
+        auto uiTextFieldShared = uiTextField.lock();
+        if (!uiTextFieldShared)
+            return;
+
+        textInput = Text;
+        uiTextFieldShared->getTextQuads()->updateText(textInput);
+    }
+
     UITextInputPanel::~UITextInputPanel()
     {
         if (auto inputShared = input.lock())

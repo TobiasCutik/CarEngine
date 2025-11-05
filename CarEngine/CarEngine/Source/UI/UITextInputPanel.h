@@ -48,6 +48,7 @@ namespace CE
 
         bool isSelected() const { return bIsSelected; }
 
+        void setTextInput(const std::string& Text);
         std::string getTextInput() const { return textInput; }
         void clearTextInput() { textInput = ""; }
 
